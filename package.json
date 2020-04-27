@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "lint": "eslint .",
     "start": "babel-node ./bin/www.js",
     "start:dev": "nodemon --exec babel-node ./bin/www.js",
     "test": "mocha --require @babel/register --ui bdd ./test --recursive"
