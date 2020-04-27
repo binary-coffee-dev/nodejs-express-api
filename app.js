@@ -1,8 +1,8 @@
-import path from "path";
+import path from 'path';
 
-import express from "express";
-import cookieParser from "cookie-parser";
-import logger from "morgan";
+import express from 'express';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
 
 import UserController from './routes/users';
 
