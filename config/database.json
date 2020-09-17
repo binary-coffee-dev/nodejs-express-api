@@ -1,0 +1,18 @@
+{
+  "development": {
+    "enable": true,
+    "host": "localhost",
+    "port": 27018,
+    "database": "api",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true
+  },
+  "test": {
+    "enable": true,
+    "host": "localhost",
+    "port": 27018,
+    "database": "api_test",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true
+  }
+}
