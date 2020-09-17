@@ -2,7 +2,7 @@ import {Controller, Get, Inject} from '../../core';
 import {UsersService} from '../services';
 
 @Controller({route: '/users'})
-export class UserController {
+export default class UserController {
 
   @Inject(UsersService)
   usersService;

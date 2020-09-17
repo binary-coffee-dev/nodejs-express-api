@@ -1,5 +1,3 @@
-import {UserController} from './users';
+import UserController from './users';
 
-const userController = new UserController();
-
-export default {userController};
+export default {UserController: new UserController()};
