@@ -8,8 +8,9 @@ export default class UserController {
   usersService;
 
   @Get({route: '/'})
-  users(req, res) {
-    res.send(this.usersService.getUsers());
+  async users(req, res) {
+    const users = await this.usersService.list();
+    res.send(users);
   }
 
   @Get({route: '/hello-world'})

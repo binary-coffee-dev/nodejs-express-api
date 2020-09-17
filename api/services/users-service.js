@@ -1,13 +1,18 @@
 import {Inject, Injectable} from '../../core';
-import {DatabaseService} from './database-service';
+import {Database} from './database';
+import User from '../models/user';
 
 @Injectable()
 export class UsersService {
 
-    @Inject(DatabaseService)
+    @Inject(Database)
     database;
 
-    getUsers() {
-        return [];
+    constructor() {
+        this.model = this.database.getModel(User);
+    }
+
+    async list() {
+        return await this.model.find();
     }
 }
