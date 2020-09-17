@@ -1,9 +1,9 @@
 import {Inject, Injectable} from '../../core';
-import {Database} from './database';
+import {Database} from '../services';
 import User from '../models/user';
 
 @Injectable()
-export class UsersService {
+export class Users {
 
     @Inject(Database)
     database;
