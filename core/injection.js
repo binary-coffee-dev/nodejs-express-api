@@ -2,7 +2,9 @@ const services = new Map();
 
 export function Injectable() {
     return function (target) {
-        services.set(target.name, new target());
+        if (!services.has(target.name)) {
+            services.set(target.name, new target());
+        }
     };
 }
 
